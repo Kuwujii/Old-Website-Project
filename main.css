@@ -1,0 +1,175 @@
+body, .modal-content {
+	background: #444444;
+}
+.navbar {
+	background: #222222;
+}
+.carousel-inner.logo {
+	width: 40px;
+}
+.nav-link.show {
+	color: #ffffff;
+}
+.nav-link.show.active, .btn {
+	font-weight: bold;
+}
+.nav-link.ES.show:not(.active):hover {
+	color: #f8dc3c;
+}
+.nav-link.ES.show.active {
+	background: #f8dc3c;
+	color: #000000;
+}
+.nav-link.JS.show:not(.active):hover {
+	color: #f48131;
+}
+.nav-link.JS.show.active {
+	background: #f48131;
+	color: #ffffff;
+}
+.nav-link.TS.show:not(.active):hover {
+	color: #007acc;
+}
+.nav-link.TS.show.active {
+	background: #007acc;
+	color: #ffffff;
+}
+.tab-pane.ES {
+	background: #4d4c44;
+	color: #000000;
+}
+.tab-pane.JS {
+	background: #4d4743;
+	color: #ffffff;
+}
+.tab-pane.TS {
+	background: #40474b;
+	color: #ffffff;
+}
+.figure-caption.ES, .ES b {
+	color: #f8dc3c;
+}
+.figure-caption.JS, .JS b {
+	color: #f48131;
+}
+.figure-caption.TS, .TS b {
+	color: #007acc;
+}
+main p, figure {
+	padding: 1% 5% 0% 5%;
+}
+h1 {
+	padding: 1% 0% 1% 0%;
+}
+footer {
+	background: #222222;
+	color: #ffffff;
+	padding: 1% 2% 1% 2%;
+}
+.btn {
+	margin: 2%;
+}
+.card.ES {
+	background: #4d4c44;
+	color: #000000;
+	border: none;
+}
+.row.ESbtn {
+	background: #f8dc3c;
+	color: #000000;
+}
+.card.JS {
+	background: #4d4743;
+	color: #ffffff;
+	border: none;
+}
+.row.JSbtn {
+	background: #f48131;
+	color: #ffffff;
+}
+.card.TS {
+	background: #40474b;
+	color: #ffffff;
+	border: none;
+}
+.row.TSbtn {
+	background: #007acc;
+	color: #ffffff;
+}
+.btn.ES {
+	background: #000000;
+	color: #f8dc3c;
+}
+.btn.ES:hover {
+	background: #f8dc3c;
+	color: #000000;
+	border: 1px solid #000000;
+}
+.btn.ES:focus {
+	box-shadow: none;
+}
+.btn.JS {
+	background: #ffffff;
+	color: #f48131;
+}
+.btn.JS:hover {
+	background: #f48131;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
+.btn.JS:focus {
+	box-shadow: none;
+}
+.btn.TS {
+	background: #ffffff;
+	color: #007acc;
+}
+.btn.TS:hover {
+	background: #007acc;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
+.btn.TS:focus {
+	box-shadow: none;
+}
+.figure img{
+	max-height: 250px;
+}
+.row.main .carousel {
+	height: 300px;
+}
+.modal-body.sec {
+	border-bottom: 1px solid white;
+}
+.btn.zrodl {
+	background: #000000;
+	color: #ffffff;
+}
+.btn.zrodl:hover {
+	background: #ffffff;
+	color: #000000;
+}
+.btn.zrodl:focus {
+	box-shadow: none;
+}
+.blockquote {
+	font-family: monospace;
+	background: #ffffff;
+	color: #000000;
+	border: 1px solid #444444;
+	border-radius: 5px;
+	padding: 5%;
+}
+.JSgra {
+	font-weight: bold;
+	color: #ffffff;
+}
+.JSgra:hover {
+	font-weight: bold;
+	color: #f48131;
+	border: 1px solid #ffffff;
+}
+
+/*
+https://colorlib.com/etc/color-mixer/
+*/

@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<title>T. Przepióra 3CI</title>
+	</head>
+	<body class="container-fluid">
+		<header class="sticky-top">
+			<nav class="navbar navbar-dark">
+				<div class="row w-100 text-center">
+					<div class="col-12 col-md-1">
+						<a class="navbar-brand" href="#">
+							<div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
+								<div class="carousel-inner logo">
+							    	<div class="carousel-item active">
+							        	<img src="images/es-logo.png" class="img-fluid" alt="ECMAScript">
+							    	</div>
+							    	<div class="carousel-item">
+							      		<img src="images/js-logo-navbar.png" class="img-fluid" alt="JavaScript">
+							    	</div>
+							    	<div class="carousel-item">
+							      		<img src="images/ts-logo.png" class="img-fluid" alt="TypeScript">
+							    	</div>
+							  	</div>
+							</div>
+						</a>
+					</div>
+					<div class="d-none d-md-block col-md-11">
+						<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+							<li class="nav-item">
+							   	<a class="nav-link ES show active" id="pills-ES-tab" data-toggle="pill" href="#pills-ES" role="tab" aria-controls="pills-ES" aria-selected="true">ECMAScript</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link JS show" id="pills-JS-tab" data-toggle="pill" href="#pills-JS" role="tab" aria-controls="pills-JS" aria-selected="false">JavaScript</a>
+							</li>
+							<li class="nav-item">
+							   	<a class="nav-link TS show" id="pills-TS-tab" data-toggle="pill" href="#pills-TS" role="tab" aria-controls="pills-TS" aria-selected="false">TypeScript</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 d-md-none">
+						<ul class="nav nav-pills flex-column mb-3 w-100" id="pills-tab" role="tablist">
+							<li class="nav-item">
+							   	<a class="nav-link ES show active" id="pills-ES-tab" data-toggle="pill" href="#pills-ES" role="tab" aria-controls="pills-ES" aria-selected="true">ECMAScript</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link JS show" id="pills-JS-tab" data-toggle="pill" href="#pills-JS" role="tab" aria-controls="pills-JS" aria-selected="false">JavaScript</a>
+							</li>
+							<li class="nav-item">
+							   	<a class="nav-link TS show" id="pills-TS-tab" data-toggle="pill" href="#pills-TS" role="tab" aria-controls="pills-TS" aria-selected="false">TypeScript</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="tab-content" id="pills-tabContent">
+				<!--ES!-->
+				<div class="tab-pane fade ES show active" id="pills-ES" role="tabpanel" aria-labelledby="pills-ES-tab">
+					<div class="row">
+						<div class="col">
+							<img src="images/es-banner.png" alt="ECMAScript" class="img-fluid">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col text-center">
+							<h1>Czym jest ECMAScript?</h1>
+						</div>
+					</div>
+					<div class="row main">
+						<div class="col-md-8 col-xl-6">
+							<p class="text-justify"><b>ECMAScript</b> jest specyfikacją jezyków skryptowych ustandaryzowaną przez <b>Ecma International</b> <i>(European Association for Standardizing Information and Communication Systems)</i> w standardzie <b>ECMA-262</b> <i>(lub <b>ISO/IEC 16262</b>)</i>. Poza ES-em Ecma International unormowało również kilka innych języków programowania <i>(C++/CLI, C#, Eiffel, Dart)</i> oraz innych systemów informatycznych takich jak system plików FAT12 i FAT16, płyty CD-ROM oraz format plików JSON. Początkowo ECMAScript powstał aby ustandaryzowac język <b>JavaScript</b> lecz później na jego podstawie zaczeły powstawac inne implementacje takie jak <b>TypeScript</b>, <b>JScript</b> lub <b>ActionScript</b>. Języki te używane są głównie do pisania skryptów na strony internetowe które będą działac po stronie klienta jednak coraz bardziej popularne staje się pisanie w nich aplikacji działających po stronie serwera za pomocą np. Node.js.</p>
+						</div>
+						<div class="col-md-4 col-xl-6 text-center">
+							<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<figure class="figure">
+											<img src="images/es-logo.png" alt="ECMAScript" class="img-fluid">
+											<figcaption class="figure-caption ES">Logo ECMAScripta</figcaption>
+										</figure>
+									</div>
+									<div class="carousel-item">
+										<figure class="figure">
+											<img src="http://ecma-international.org/ecma-402/img/ecma-logo.svg" alt="Ecma International" class="img-fluid">
+											<figcaption class="figure-caption ES">Logo Ecma International</figcaption>
+										</figure>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row d-xl-none">
+						<div class="col text-center">
+							<h1>Historia ECMAScripta</h1>
+						</div>
+					</div>
+					<div class="row d-xl-none">
+						<div class="col-md-4 text-center">
+							<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<figure class="figure">
+											<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Guy_Steele.jpg/800px-Guy_Steele.jpg" alt="Guy Steele" class="img-fluid">
+											<figcaption class="figure-caption ES">Guy Lewis Steele Jr.</figcaption>
+										</figure>
+									</div>
+									<div class="carousel-item">
+										<figure class="figure">
+											<img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Mike_Cowlishaw_2005.jpg" alt="Guy Steele" class="img-fluid">
+											<figcaption class="figure-caption ES">Michael Frederic Cowlishaw</figcaption>
+										</figure>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<p class="text-justify"><b>ECMA-262</b> oraz <b>ECMAScript</b> zostały stworzone i opublikowane w Czerwcu 1997 roku przez <b>Ecma International</b>. Zostały one oparte na podstawie powstałego rok wcześniej <b>JavaScripta</b>. Pierwsza edycja opracowana przez <b>Guya Steele</b> została przyjęta przez <b>Generalne Zgromadzenie Ecma</b> <i>(Ecma General Assembly)</i> w którym na dzień dzisiejszy znajdują się reprezentanci takich firm jak Apple, Facebook, Google, IBM, Intel oraz Microsoft itp. jednak to dopiero druga edycja ECMAScripta opracowana już przez <b>Michaela Cowlishawa</b> została dostosowana do wymagań standardu <b>ISO/IEC 16262</b> ustanowionego przez <b>ISO</b> <i>(International Organization for Standardization)</i> oraz <b>IEC</b> <i>(International Electrotechnical Commission)</i>. Od tamtego czasu ES rdzeniem na podstawie którego opiera się wiele innych języków w tym JavaScript.</p>
+						</div>
+					</div>
+					<div class="container-fluid">
+						<div class="row d-none d-xl-block ESbtn">
+							<div class="col text-center">
+								<a class="btn ES" data-toggle="collapse" href="#collapseES" role="button" aria-expanded="false" aria-controls="collapseExample">
+	    							Więcej o ECMAScript
+	  							</a>
+							</div>
+						</div>
+					</div>
+					<div class="collapse" id="collapseES">
+  						<div class="card card-body d-none d-xl-block ES">
+							<div class="row">
+								<div class="col text-center">
+									<h1>Historia ECMAScripta</h1>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6 text-center">
+									<figure class="figure">
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Guy_Steele.jpg/800px-Guy_Steele.jpg" alt="Guy Steele" class="img-fluid">
+										<figcaption class="figure-caption ES">Guy Lewis Steele Jr.</figcaption>
+									</figure>
+									<figure class="figure">
+										<img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Mike_Cowlishaw_2005.jpg" alt="Guy Steele" class="img-fluid">
+										<figcaption class="figure-caption ES">Michael Frederic Cowlishaw</figcaption>
+									</figure>
+								</div>
+								<div class="col-6">
+									<p class="text-justify"><b>ECMA-262</b> oraz <b>ECMAScript</b> zostały stworzone i opublikowane w Czerwcu 1997 roku przez <b>Ecma International</b>. Zostały one oparte na podstawie powstałego rok wcześniej <b>JavaScripta</b>. Pierwsza edycja opracowana przez <b>Guya Steele</b> została przyjęta przez <b>Generalne Zgromadzenie Ecma</b> <i>(Ecma General Assembly)</i> w którym na dzień dzisiejszy znajdują się reprezentanci takich firm jak Apple, Facebook, Google, IBM, Intel oraz Microsoft itp. jednak to dopiero druga edycja ECMAScripta opracowana już przez <b>Michaela Cowlishawa</b> została dostosowana do wymagań standardu <b>ISO/IEC 16262</b> ustanowionego przez <b>ISO</b> <i>(International Organization for Standardization)</i> oraz <b>IEC</b> <i>(International Electrotechnical Commission)</i>. Od tamtego czasu ES rdzeniem na podstawie którego opiera się wiele innych języków w tym JavaScript.</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col text-center">
+									<h1>Co nowego w ES2018?</h1>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col text-center">
+									<h3>Iteratory Asynchroniczne</h3>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-3 text-center"></div>
+								<div class="col-6">
+									<blockquote class="blockquote">
+										<span class="text-primary">async function</span> <span class="text-success">process</span>(<span class="text-warning">array</span>) {<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-danger">for await</span> (<span class="text-primary">let</span> i <span class="text-danger">of</span> array) {<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-primary">doSomething</span>(i);<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+										}
+									</blockquote>
+								</div>
+								<div class="col-3 text-center"></div>
+							</div>
+							<div class="row">
+								<div class="col text-center">
+									<h3>Promise.finally()</h3>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-3 text-center"></div>
+								<div class="col-6">
+									<blockquote class="blockquote">
+										<span class="text-primary">function</span> <span class="text-success">doSomething</span>() {<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-primary">doSomething1</span>()<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;.<span class="text-primary">then</span>(doSomething2)<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;.<span class="text-primary">then</span>(doSomething3)<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;.<span class="text-primary">catch</span>(<span class="text-warning">err</span> <span class="text-primary">=></span> {<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-primary">console</span>.<span class="text-primary">log</span>(err);<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;})<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;.<span class="text-primary">finally</span>(() <span class="text-primary">=></span> {<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-primary">doSomething4</span>()<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;});<br>
+										}
+									</blockquote>
+								</div>
+								<div class="col-3 text-center"></div>
+							</div>
+							<div class="row">
+								<div class="col text-center">
+									<h3>Własności Rest/Spread</h3>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-3 text-center"></div>
+								<div class="col-6">
+									<blockquote class="blockquote">
+										<span class="text-primary">const</span> myObject <span class="text-danger">=</span> { a: <span class="text-info">1</span>, b: <span class="text-info">2</span>, c: <span class="text-info">3</span> };<br>
+										<span class="text-primary">const</span> { a, <span class="text-danger">...</span>x } <span class="text-danger">=</span> myObject;<br>
+										<span class="text-secondary">//const a = 1, x = { b: 2, c: 3 };</span><br>
+										<br>
+										<span class="text-primary">const</span> obj1 <span class="text-danger">=</span> { a: <span class="text-info">1</span>, b: <span class="text-info">2</span>, c: <span class="text-info">3</span> };<br>
+										<span class="text-primary">const</span> obj2 <span class="text-danger">=</span> { <span class="text-danger">...</span>obj1, z: <span class="text-info">26</span> };<br>
+										<span class="text-secondary">//const obj2 = { a: 1, b: 2, c: 3, z: 26 };</span>
+									</blockquote>
+								</div>
+								<div class="col-3 text-center"></div>
+							</div>
+							<div class="row">
+								<div class="col text-center">
+									<h3>Uzupełnienie RegExp</h3>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-3 text-center"></div>
+								<div class="col-6">
+									<blockquote class="blockquote">
+										<span class="text-primary">const</span> reDate <span class="text-danger">=</span> <span class="text-warning">/(?<<span class="text-success">year</span>><span class="text-info">[0-9]</span><span class="text-danger">{4}</span>)-(?<<span class="text-success">month</span>><span class="text-info">[0-9]</span><span class="text-danger">{2}</span>)-(?<<span class="text-success">day</span>><span class="text-info">[0-9]</span><span class="text-danger">{2}</span>)/</span>;<br>
+										<span class="text-primary">const</span> match <span class="text-danger">=</span> reDate.<span class="text-primary">exec</span>(<span class="text-warning">'2018-04-30'</span>);<br>
+										<span class="text-primary">const</span> year <span class="text-danger">=</span> match.groups.year; <span class="text-secondary">//match[1]</span><br>
+										<span class="text-primary">const</span> month <span class="text-danger">=</span> match.groups.month; <span class="text-secondary">//match[2]</span><br>
+										<span class="text-primary">const</span> day <span class="text-danger">=</span> match.groups.day; <span class="text-secondary">//match[3]</span><br>
+										<br>
+										<span class="text-primary">const</span> data <span class="text-danger">=</span> <span class="text-warning">'2018-04-30'</span>;<br>
+										<span class="text-primary">const</span> usDate <span class="text-danger">=</span> data.<span class="text-primary">replace</span>(reDate, <span class="text-warning">'$<<span>month</span>>-$<<span>day</span>>-$<<span>year</span>>'</span>);
+									</blockquote>
+								</div>
+								<div class="col-3 text-center"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--JS!-->
+				<div class="tab-pane fade JS" id="pills-JS" role="tabpanel" aria-labelledby="pills-JS-tab">
+					<div class="row">
+						<div class="col">
+							<img src="images/js-banner.png" alt="JavaScript" class="img-fluid">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col text-center">
+							<h1>Czym jest JavaScript?</h1>
+						</div>
+					</div>
+					<div class="row main">
+						<div class="col-md-4 col-xl-6 text-center">
+							<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<figure class="figure">
+											<img src="images/js-logo.png" alt="JavaScript" class="img-fluid">
+											<figcaption class="figure-caption JS">Popularne logo JavaScripta</figcaption>
+										</figure>
+										<figure class="figure">
+											<img src="images/js-logo-true.png" alt="JavaScript" class="img-fluid">
+											<figcaption class="figure-caption JS">Właściwe logo JavaScripta</figcaption>
+										</figure>
+									</div>
+									<div class="carousel-item">
+										<figure class="figure">
+											<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Netscape_logo.svg/1920px-Netscape_logo.svg.png" alt="JavaScript" class="img-fluid">
+											<figcaption class="figure-caption JS">Logo Netscape Communications</figcaption>
+										</figure>
+									</div>
+									<div class="carousel-item">
+										<figure class="figure">
+											<img src="https://deal5star.com/wp-content/uploads/2018/01/html-css-js.png" alt="JavaScript" class="img-fluid">
+											<figcaption class="figure-caption JS">Najpopularniejsze technologie</figcaption>
+										</figure>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-8 col-xl-6">
+							<p class="text-justify"><b>JavaScript</b> jest językiem skryptowym wysokiego poziomu opartym na specyfikacji <b>ECMAScript</b> będąc jednocześnie jego najpopularniejszym dialektem. Uznawany jest za jedną z 3 najważniejszych technologii używanych do tworzenia stron internetowych razem z <b>HTML</b>em oraz <b>CSS</b>em. Początkowo został on stworzony aby umożliwić tworzenie interaktywnych elementów na stronach. Miały one być wykonywane bezpośrednio na komputerze użytkownika jednak na dzień dzisiejszy popularne jest pisanie za jego pomocą skryptów działających po stronie serwera oraz aplikacjach nie związanych ze stronami internetowymi. JS został stworzony przez <b>Netscape Communications</b> jednak często mylony jest z językiem <b>Java</b> należącym do <b>Oracle</b> <i>(wtedy Sun Microsystems)</i> na którym bazowane były niektóre jego właściwości.</p>
+							<br>
+						</div>
+					</div>
+					<div class="row d-xl-none">
+						<div class="col text-center">
+							<h1>Historia JavaScripta</h1>
+						</div>
+					</div>
+					<div class="row d-xl-none">
+						<div class="col-md-8">
+							<p class="text-justify"><b>JavaScript</b> został zaprojektowany i stworzony przez <b>Brendana Eicha</b> z <b>Netscape Communications</b>, a następnie wydany <b>Marcem 1996</b> roku. Celem Netscapu było wprowadzenie nowej technologii zanim zrobi to Microsoft i JS był ich kolejną próbą <i>(zaraz po nieudanej współpracy z <b>Sun Microsystems</b> nad zaimplementowaniem języka <b>Java</b> w ich przeglądarce <b>Netscape Navigator</b>, przez co JavaScript został zaprojektowany w podobny sposób)</i>. Pomysł ten nie został dobrze odebrany i uważano, że lepszym pomysłem będzie próba implementacji innych istniejących już języków takich jak Perl lub Python. Aby obronić swoją decyzje, Eich potrzebował prototypu - napisał go w 10 dni. Pomysł przeszedł pomyślnie przez wszystkie testy pod nazwami <b>Mocha</b> oraz <b>LiveScript</b>, jednak finalnie wydany został już pod nazwą JavaScript <i>(co spowodowało spore zamieszanie)</i>.</p>
+						</div>
+						<div class="col-md-4 text-center">
+							<figure class="figure">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg/1024px-Brendan_Eich_Mozilla_Foundation_official_photo.jpg.png" alt="JavaScript" class="img-fluid">
+								<figcaption class="figure-caption JS">Brendan Eich</figcaption>
+							</figure>
+						</div>
+					</div>
+					<div class="container-fluid">
+						<div class="row d-none d-xl-block JSbtn">
+							<div class="col text-center">
+								<a class="btn JS" data-toggle="collapse" href="#collapseJS" role="button" aria-expanded="false" aria-controls="collapseExample">
+	    							Więcej o JavaScript
+	  							</a>
+							</div>
+						</div>
+					</div>
+					<div class="collapse" id="collapseJS">
+  						<div class="card card-body d-none d-xl-block JS">
+							<div class="row">
+								<div class="col text-center">
+									<h1>Historia JavaScripta</h1>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									<p class="text-justify"><b>JavaScript</b> został zaprojektowany i stworzony przez <b>Brendana Eicha</b> z <b>Netscape Communications</b>, a następnie wydany <b>Marcem 1996</b> roku. Celem Netscapu było wprowadzenie nowej technologii zanim zrobi to Microsoft i JS był ich kolejną próbą <i>(zaraz po nieudanej współpracy z <b>Sun Microsystems</b> nad zaimplementowaniem języka <b>Java</b> w ich przeglądarce <b>Netscape Navigator</b>, przez co JavaScript został zaprojektowany w podobny sposób)</i>. Pomysł ten nie został dobrze odebrany i uważano, że lepszym pomysłem będzie próba implementacji innych istniejących już języków takich jak Perl lub Python. Aby obronić swoją decyzje, Eich potrzebował prototypu - napisał go w 10 dni. Pomysł przeszedł pomyślnie przez wszystkie testy pod nazwami <b>Mocha</b> oraz <b>LiveScript</b>, jednak finalnie wydany został już pod nazwą JavaScript <i>(co spowodowało spore zamieszanie)</i>.</p>
+								</div>
+								<div class="col-6 text-center">
+									<figure class="figure">
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Brendan_Eich_Mozilla_Foundation_official_photo.jpg/1024px-Brendan_Eich_Mozilla_Foundation_official_photo.jpg.png" alt="JavaScript" class="img-fluid">
+										<figcaption class="figure-caption JS">Brendan Eich</figcaption>
+									</figure>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col text-center">
+									<h1>Przykład</h1>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col text-center">
+									<ul class="nav nav-tabs" id="myTab" role="tablist">
+									  	<li class="nav-item">
+									    	<a class="nav-link JSgra active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Gra</a>
+									  	</li>
+									  	<li class="nav-item">
+									    	<a class="nav-link JSgra" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Kod</a>
+									  	</li>
+									</ul>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-2 text-center"></div>
+								<div class="col-8">
+									<div class="tab-content" id="myTabContent">
+										<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+											<div class="text-center" id="PONG">
+												<p><b>W</b> - góra <br>
+												<b>D</b> - dół</p>
+												<script type="text/javascript">
+													var szerokosc = 700, wysokosc = 600;
+													var canvas, ctx, klawisz;
+													
+													var gracz = {
+														x: null,
+														y: null,
+														width: 20,
+														height: 100,
+														update: function() {
+															if (klawisz[87]) {
+																this.y -= 7;
+															}
+															if (klawisz[83]) {
+																this.y += 7;
+															}
+															this.y = Math.max(Math.min(this.y, wysokosc-this.height), 0);
+														},
+														draw: function() {
+															ctx.fillRect(this.x, this.y, this.width, this.height);
+														}
+													};
+
+													var ai = {
+														x: null,
+														y: null,
+														width: 20,
+														height: 100,
+														update: function() {
+															var cel = pilka.y-(this.height-pilka.bok)*0.5;
+															this.y += (cel-this.y)*0.1;
+															this.y = Math.max(Math.min(this.y, wysokosc-this.height), 0);
+														},
+														draw: function() {
+															ctx.fillRect(this.x, this.y, this.width, this.height);
+														}
+													};
+
+													var pilka = {
+														x: null,
+														y: null,
+														przyspieszenie: null,
+														bok: 20,
+														predkosc: 12,
+														serve: function(bok) {
+															var losowa = Math.random();
+															this.x = bok === 1 ? gracz.x+gracz.width : ai.x-this.bok;
+															this.y = (wysokosc-this.bok)*losowa;
+															var kat = 0.1*Math.PI*(1 - 2*losowa);
+															this.przyspieszenie = {
+																x: bok*this.predkosc*Math.cos(kat),
+																y: this.predkosc*Math.sin(kat)
+															}
+														},
+														update: function() {
+															this.x += this.przyspieszenie.x;
+															this.y += this.przyspieszenie.y;
+															if (0 > this.y || this.y+this.bok > wysokosc) {
+																var offset = this.przyspieszenie.y < 0 ? 0-this.y : wysokosc-(this.y+this.bok);
+																this.y += 2*offset;
+																this.przyspieszenie.y *= -1;
+															}
+															var AABBIntersect = function(ax, ay, aw, ah, bx, by, bw, bh) {
+																return ax < bx+bw && ay < by+bh && bx < ax+aw && by < ay+ah;
+															};
+															var pdle = this.przyspieszenie.x < 0 ? gracz : ai;
+															if (AABBIntersect(pdle.x, pdle.y, pdle.width, pdle.height, this.x, this.y, this.bok, this.bok)) {
+																this.x = pdle === gracz ? gracz.x+gracz.width : ai.x-this.bok;
+																var n = (this.y+this.bok-pdle.y)/(pdle.height+this.bok);
+																var kat = 0.25*Math.PI*(2*n-1);
+																var smash = Math.abs(kat) > 0.2*Math.PI ? 1.5 : 1;
+																this.przyspieszenie.x = smash*(pdle === gracz ? 1 : -1)*this.predkosc*Math.cos(kat);
+																this.przyspieszenie.y = smash*this.predkosc*Math.sin(kat);
+															}
+															if (0 > this.x+this.bok || this.x > szerokosc) {
+																this.serve(pdle === gracz ? 1 : -1);
+															}
+														},
+														draw: function() {
+															ctx.fillRect(this.x, this.y, this.bok, this.bok);
+														}
+													};
+
+													function main() {
+														canvas = document.createElement("canvas");
+														canvas.width = szerokosc;
+														canvas.height = wysokosc;
+														ctx = canvas.getContext("2d");
+														document.getElementById("PONG").appendChild(canvas);
+														klawisz = {};
+														document.addEventListener("keydown", function(evt) { klawisz[evt.keyCode] = true; });
+														document.addEventListener("keyup", function(evt) { delete klawisz[evt.keyCode]; });
+														init();
+														var loop = function() {
+															update();
+															draw();
+															window.requestAnimationFrame(loop, canvas);
+														};
+														window.requestAnimationFrame(loop, canvas);
+													}
+
+													function init() {
+														gracz.x = gracz.width;
+														gracz.y = (wysokosc-gracz.height)/2;
+														ai.x = szerokosc-(gracz.width+ai.width);
+														ai.y = (wysokosc-ai.height)/2;
+														pilka.serve(1);
+													}
+													
+													function update() {
+														pilka.update();
+														gracz.update();
+														ai.update();
+													}
+													
+													function draw() {
+														ctx.fillRect(0, 0, szerokosc, wysokosc);
+														ctx.save();
+														ctx.fillStyle = "#ffffff";
+														pilka.draw();
+														gracz.draw();
+														ai.draw();
+														var w = 4;
+														var x = (szerokosc-w)*0.5;
+														var y = 0;
+														var step = wysokosc/20;
+														while (y < wysokosc) {
+															ctx.fillRect(x, y+step*0.25, w, step*0.5);
+															y += step;
+														}
+														ctx.restore();
+													}
+
+													main();
+												</script>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+											<blockquote class="blockquote">
+												var szerokosc = 700, wysokosc = 600;<br>
+												var canvas, ctx, klawisz;<br>
+												<br>
+												var gracz = {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;x: null,<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;y: null,<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;width: 20,<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;height: 100,<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;update: function() {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (klawisz[87]) {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.y -= 7;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (klawisz[83]) {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.y += 7;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.y = Math.max(Math.min(this.y, wysokosc-this.height), 0);<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;draw: function() {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ctx.fillRect(this.x, this.y, this.width, this.height);<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+												};<br>
+												<br>
+												var ai = {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;x: null,<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;y: null,<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;width: 20,<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;height: 100,<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;update: function() {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var cel = pilka.y-(this.height-pilka.bok)*0.5;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.y += (cel-this.y)*0.1;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.y = Math.max(Math.min(this.y, wysokosc-this.height), 0);<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;draw: function() {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ctx.fillRect(this.x, this.y, this.width, this.height);<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+												};<br>
+												<br>
+												var pilka = {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;x: null,<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;y: null,<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;przyspieszenie: null,<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;bok: 20,<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;predkosc: 12,<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;serve: function(bok) {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var losowa = Math.random();<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.x = bok === 1 ? gracz.x+gracz.width : ai.x-this.bok;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.y = (wysokosc-this.bok)*losowa;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var kat = 0.1*Math.PI*(1 - 2*losowa);<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.przyspieszenie = {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x: bok*this.predkosc*Math.cos(kat),<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y: this.predkosc*Math.sin(kat)<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;update: function() {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.x += this.przyspieszenie.x;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.y += this.przyspieszenie.y;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (0 > this.y || this.y+this.bok > wysokosc) {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var offset = this.przyspieszenie.y < 0 ? 0-this.y : wysokosc-(this.y+this.bok);<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.y += 2*offset;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.przyspieszenie.y *= -1;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var AABBIntersect = function(ax, ay, aw, ah, bx, by, bw, bh) {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return ax < bx+bw && ay < by+bh && bx < ax+aw && by < ay+ah;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var pdle = this.przyspieszenie.x < 0 ? gracz : ai;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (AABBIntersect(pdle.x, pdle.y, pdle.width, pdle.height, this.x, this.y, this.bok, this.bok)) {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.x = pdle === gracz ? gracz.x+gracz.width : ai.x-this.bok;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var n = (this.y+this.bok-pdle.y)/(pdle.height+this.bok);<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var kat = 0.25*Math.PI*(2*n-1);<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var smash = Math.abs(kat) > 0.2*Math.PI ? 1.5 : 1;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.przyspieszenie.x = smash*(pdle === gracz ? 1 : -1)*this.predkosc*Math.cos(kat);<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.przyspieszenie.y = smash*this.predkosc*Math.sin(kat);<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (0 > this.x+this.bok || this.x > szerokosc) {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.serve(pdle === gracz ? 1 : -1);<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;},<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;draw: function() {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ctx.fillRect(this.x, this.y, this.bok, this.bok);<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+												};<br>
+												<br>
+												function main() {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;canvas = document.createElement("canvas");<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;canvas.width = szerokosc;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;canvas.height = wysokosc;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;ctx = canvas.getContext("2d");<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById("PONG").appendChild(canvas);<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;klawisz = {};<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;document.addEventListener("keydown", function(evt) { klawisz[evt.keyCode] = true; });<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;document.addEventListener("keyup", function(evt) { delete klawisz[evt.keyCode]; });<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;init();<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;var loop = function() {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;update();<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;draw();<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window.requestAnimationFrame(loop, canvas);<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;};<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;window.requestAnimationFrame(loop, canvas);<br>
+												}<br>
+												<br>
+												function init() {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;gracz.x = gracz.width;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;gracz.y = (wysokosc-gracz.height)/2;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;ai.x = szerokosc-(gracz.width + ai.width);<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;ai.y = (wysokosc-ai.height)/2;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;pilka.serve(1);<br>
+												}<br>
+												<br>
+												function update() {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;pilka.update();<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;gracz.update();<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;ai.update();<br>
+												}<br>
+												<br>
+												function draw() {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;ctx.fillRect(0, 0, szerokosc, wysokosc);<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;ctx.save();<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;ctx.fillStyle = "#ffffff";<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;pilka.draw();<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;gracz.draw();<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;ai.draw();<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;var w = 4;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;var x = (szerokosc-w)*0.5;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;var y = 0;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;var step = wysokosc/20;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;while (y < wysokosc) {<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ctx.fillRect(x, y+step*0.25, w, step*0.5);<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y += step;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;ctx.restore();<br>
+												}<br>
+												<br>
+												main();
+											</blockquote>
+										</div>
+									</div>
+								</div>
+								<div class="col-2 text-center"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--TS!-->
+				<div class="tab-pane fade TS" id="pills-TS" role="tabpanel" aria-labelledby="pills-TS-tab">
+					<div class="row">
+						<div class="col">
+							<img src="images/ts-banner.png" alt="TypeScript" class="img-fluid">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col text-center">
+							<h1>Czym jest TypeScript?</h1>
+						</div>
+					</div>
+					<div class="row main">
+						<div class="col-md-8 col-xl-6">
+							<p class="text-justify"><b>TypeScript</b> jest językiem open-source stworzonym przez <b>Microsoft</b> oraz będącym nadzbiorem <b>JavaScripta</b> <i>(co oznacza, że każdy program napisany w JavaScripcie będzie prawidłowym programem w TypeScripcie)</i>. Finalny kod TypeScripta jest transkompilowany do JavaScripta. Język ten powstał głównie z powodu potrzeby pisania programów JSa na klasach, co w tamtym czasie nie było jeszcze zawarte w standardzie <b>ECMAScript</b>. Dzięki takiemu podejściu TS mógł zostać zaprojektowany tak aby ułatwić tworzenie dużych programów. Pomimo tego dalej umożliwia on programowanie typowych dla JSa aplikacji na stronach internetowych zarówno po stronie użytkownika jak i serwera. TypeScript umożliwia również używanie <b>plików nagłówkowych</b> istniejących już bibliotek JavaScripta <i>(pliki te działają podobnie do plików nagłówkowych w języku <b>C++</b>)</i>, co umożliwia używanie zewnętrznych bibliotek JSa do programowania w TSie.</p>
+						</div>
+						<div class="col-md-4 text-center">
+							<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<figure class="figure">
+											<img src="images/ts-logo.png" alt="TypeScript" class="img-fluid">
+											<figcaption class="figure-caption TS">Logo TypeScripta</figcaption>
+										</figure>
+									</div>
+									<div class="carousel-item">
+										<figure class="figure">
+											<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_(2012).svg/1920px-Microsoft_logo_(2012).svg.png" alt="TypeScript" class="img-fluid">
+											<figcaption class="figure-caption TS">Logo Microsoftu</figcaption>
+										</figure>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row d-xl-none">
+						<div class="col text-center">
+							<h1>Historia TypeScripta</h1>
+						</div>
+					</div>
+					<div class="row d-xl-none">
+						<div class="col-md-4 text-center">
+							<figure class="figure">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Anders_Hejlsberg.jpg/800px-Anders_Hejlsberg.jpg" alt="TypeScript" class="img-fluid">
+								<figcaption class="figure-caption TS">Anders Hejlsberg</figcaption>
+							</figure>
+						</div>
+						<div class="col-md-8">
+							<p class="text-justify"><b>TypeScript</b> został zaprojektowany oraz stworzony przez <b>Microsoft</b>, jednak dużą rolę w tym odgrywał <b>Anders Hejlsberg</b> <i>(Główny architekt języka <b>C#</b> oraz twórca języków <b>Delphi</b> i <b>Turbo Pascal</b>)</i>. TypeScript pierwszy raz został pokazany publicznie w <b>Październiku 2012</b> roku <i>(po 2 latach produkcji)</i> w wersji 0.8 i bardzo szybko zdobył sobie uznanie. Premiera nie obyła się bez problemów - pomimo bycia dopracowanym językiem był on mocno krytykowany za bycie językiem ekskluzywnym dla IDE <b>Microsoft Visual Studio</b> co uniemożliwiło prace z tym językiem na systemach nie należących do rodziny <b>Windows</b> <i>(wsparcie dla pozostałych systemów operacyjnych zostało później zaimplementowane)</i>.</p>
+						</div>
+					</div>
+					<div class="container-fluid">
+						<div class="row d-none d-xl-block TSbtn">
+							<div class="col text-center">
+								<a class="btn TS" data-toggle="collapse" href="#collapseTS" role="button" aria-expanded="false" aria-controls="collapseExample">
+	    							Więcej o TypeScript
+	  							</a>
+							</div>
+						</div>
+					</div>
+					<div class="collapse" id="collapseTS">
+  						<div class="card card-body d-none d-xl-block TS">
+							<div class="row">
+								<div class="col text-center">
+									<h1>Historia TypeScripta</h1>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6 text-center">
+									<figure class="figure">
+										<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Anders_Hejlsberg.jpg/800px-Anders_Hejlsberg.jpg" alt="TypeScript" class="img-fluid">
+										<figcaption class="figure-caption TS">Anders Hejlsberg</figcaption>
+									</figure>
+								</div>
+								<div class="col-6">
+									<p class="text-justify"><b>TypeScript</b> został zaprojektowany oraz stworzony przez <b>Microsoft</b>, jednak dużą rolę w tym odgrywał <b>Anders Hejlsberg</b> <i>(Główny architekt języka <b>C#</b> oraz twórca języków <b>Delphi</b> i <b>Turbo Pascal</b>)</i>. TypeScript pierwszy raz został pokazany publicznie w <b>Październiku 2012</b> roku <i>(po 2 latach produkcji)</i> w wersji 0.8 i bardzo szybko zdobył sobie uznanie. Premiera nie obyła się bez problemów - pomimo bycia dopracowanym językiem był on mocno krytykowany za bycie językiem ekskluzywnym dla IDE <b>Microsoft Visual Studio</b> co uniemożliwiło prace z tym językiem na systemach nie należących do rodziny <b>Windows</b> <i>(wsparcie dla pozostałych systemów operacyjnych zostało później zaimplementowane)</i>.</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col text-center">
+									<h1>JavaScript vs TypeScript vs C#</h1>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-2 text-center"></div>
+								<div class="col-8 text-center">
+									<table class="table table-dark">
+									  	<thead>
+									    	<tr>
+									      		<th scope="col">#</th>
+									      		<th scope="col">JavaScript</th>
+									      		<th scope="col">TypeScript</th>
+									      		<th scope="col">C#</th>
+									    	</tr>
+									  	</thead>
+									  	<tbody>
+									  		<tr>
+									      		<th scope="row">Zamierzone zastosowanie</th>
+									      		<td>Client-side/Server-side</td>
+									      		<td>Client-side/Server-side</td>
+									      		<td>Generalne</td>
+									    	</tr>
+									  		<tr>
+									      		<th scope="row">Rodzaj</th>
+									      		<td>Interpretowany</td>
+									      		<td>Kompilowany (do JavaScripta)</td>
+									      		<td>Kompilowany (do Bytecodu)</td>
+									    	</tr>
+									    	<tr>
+									      		<th scope="row">Typowanie</th>
+									      		<td>Dynamiczne/Słabe</td>
+									      		<td>Statyczne/Silne</td>
+									      		<td>Statyczne/Silne</td>
+									    	</tr>
+									    	<tr>
+									      		<th scope="row">Client-side</th>
+									      		<td><span class="text-success">Tak</span></td>
+									      		<td><span class="text-success">Tak</span></td>
+									      		<td><span class="text-warning">Tak (ASP.NET)</span></td>
+									    	</tr>
+									    	<tr>
+									      		<th scope="row">Server-side</th>
+									      		<td><span class="text-warning">Tak (Node.js)</span></td>
+									      		<td><span class="text-warning">Tak (Node.js)</span></td>
+									      		<td><span class="text-warning">Tak (ASP.NET)</span></td>
+									    	</tr>
+									  	</tbody>
+									</table>
+								</div>
+								<div class="col-2 text-center"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="row">
+				<div class="col-2">
+					<button type="button" class="btn zrodl" data-toggle="modal" data-target="#exampleModalCenter">
+						Źródła
+					</button>
+				</div>
+				<div class="col-10">
+					<p class="text-right">Tomasz Przepióra 3CI</p>
+				</div>
+			</div>
+			<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			  	<div class="modal-dialog modal-dialog-centered" role="document">
+			    	<div class="modal-content">
+			      		<div class="modal-header">
+			        		<h5 class="modal-title" id="exampleModalCenterTitle">Źródła</h5>
+			        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          			<span aria-hidden="true">&times;</span>
+			        		</button>
+			      		</div>
+			     		<div class="modal-body sec">
+			       			Informacje i kod:
+			       			<ul class="text-decoration-none">
+			       				<li><a href="https://en.wikipedia.org/wiki/ECMAScript" class="text-white">Wikipedia ECMAScript</a></li>
+			       				<li><a href="https://en.wikipedia.org/wiki/JavaScript" class="text-white">Wikipedia JavaScript</a></li>
+			       				<li><a href="https://en.wikipedia.org/wiki/TypeScript" class="text-white">Wikipedia TypeScript</a></li>
+			       				<li><a href="https://medium.freecodecamp.org/whats-the-difference-between-javascript-and-ecmascript-cba48c73a2b5" class="text-white">FreeCodeCamp</a></li>
+			       				<li><a href="https://www.sitepoint.com/es2018-whats-new/" class="text-white">Sitepoint</a></li>
+			       				<li><a href="http://www.piyusharora.co/a-simple-ping-pong-game-made-with-vanilla-js/" class="text-white">Piyusharora</a></li>
+			       				<li><a href="https://www.educba.com/c-sharp-vs-js/" class="text-white">Educba C# vs JS</a></li>
+			       				<li><a href="https://www.educba.com/typescript-vs-javascript/" class="text-white">Educba JS vs TS</a></li>
+			       				<li><a href="https://en.wikipedia.org/wiki/Comparison_of_programming_languages" class="text-white">Wikipedia Comparision of Programming Languages</a></li>
+			       			</ul>
+			      		</div>
+			      		<div class="modal-body">
+			       			Zdjęcia:
+			       			<ul class="text-decoration-none">
+			       				<li><a href="https://en.wikipedia.org/wiki/Mike_Cowlishaw#/media/File:Mike_Cowlishaw_2005.jpg" class="text-white">Michael Frederic Cowlishaw</a></li>
+			       				<li><a href="https://en.wikipedia.org/wiki/Guy_L._Steele_Jr.#/media/File:Guy_Steele.jpg" class="text-white">Guy Lewis Steele Jr.</a></li>
+			       				<li><a href="https://en.wikipedia.org/wiki/Brendan_Eich#/media/File:Brendan_Eich_Mozilla_Foundation_official_photo.jpg" class="text-white">Brendan Eich</a></li>
+			       				<li><a href="https://en.wikipedia.org/wiki/Anders_Hejlsberg#/media/File:Anders_Hejlsberg.jpg" class="text-white">Anders Hejlsberg</a></li>
+			       			</ul>
+			      		</div>
+			    	</div>
+			  	</div>
+			</div>
+		</footer>
+		<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	</body>
+</html>
